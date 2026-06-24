@@ -1,0 +1,362 @@
+2026-06-13 23:22:53,720 | INFO     | core.aoi | Geocoding 'Mumbai, India' (attempt 1/3)
+2026-06-13 23:22:54,514 | INFO     | core.aoi | Resolved AOI for 'Mumbai, India': lat=19.0550, lon=72.8692, bbox=(72.8192035, 19.004998999999998, 72.9192035, 19.104999)
+2026-06-13 23:22:54,523 | INFO     | core.pipeline | Running fresh analysis for Mumbai 2025 using lightgbm
+2026-06-13 23:22:54,525 | INFO     | core.imagery | Searching sentinel-2-l2a for Mumbai in 2025-01-01/2025-12-31 (cloud cover < 20%)
+2026-06-13 23:22:56,555 | INFO     | core.imagery | Found 82 candidate(s); best cloud cover = 0.00%
+2026-06-13 23:22:56,556 | INFO     | core.imagery | Selected sentinel-2-l2a item 'S2B_MSIL2A_20251013T053659_R005_T42QZG_20251013T090851' for Mumbai 2025 (cloud cover 0.00%)
+2026-06-13 23:25:58,630 | INFO     | core.imagery | Cached imagery to D:\Geo\Land Cover\data\imagery\Mumbai_2025_sentinel-2-l2a_298ca77f6f2142ed.npz
+2026-06-13 23:25:58,631 | INFO     | core.features | Computing spectral indices and feature stack.
+2026-06-13 23:25:58,814 | INFO     | core.features | Feature stack assembled: 11 features, shape (377, 359).
+2026-06-13 23:25:58,818 | INFO     | core.synthetic_labels | Pseudo-label distribution: {0: 9063, 1: 12804, 2: 40820, 3: 24203, 4: 48453}
+2026-06-13 23:25:58,868 | INFO     | core.synthetic_labels | Sampled 7500 training pixels across 5 classes (features=11).
+2026-06-13 23:25:58,869 | INFO     | models.classifier | Training lightgbm on 7500 samples (11 features), test_size=0.20
+2026-06-13 23:26:00,523 | INFO     | models.classifier | Training complete: accuracy=0.9993, macro-F1=0.9993
+2026-06-13 23:26:01,364 | INFO     | models.classifier | Saved model to D:\Geo\Land Cover\models\trained\Mumbai_2025_lightgbm.joblib
+2026-06-13 23:26:01,653 | INFO     | core.pipeline | Cached classification result to D:\Geo\Land Cover\data\classifications\Mumbai_2025_lightgbm_98cd836c9620ff48.npz
+2026-06-13 23:26:51,928 | INFO     | core.aoi | AOI cache hit for 'Mumbai, India'
+2026-06-13 23:26:51,931 | INFO     | core.pipeline | Running fresh analysis for Mumbai 2005 using random_forest
+2026-06-13 23:26:51,932 | INFO     | core.imagery | Searching landsat-c2-l2 for Mumbai in 2005-01-01/2005-12-31 (cloud cover < 20%)
+2026-06-13 23:26:52,969 | INFO     | core.imagery | Found 16 candidate(s); best cloud cover = 0.00%
+2026-06-13 23:26:52,970 | INFO     | core.imagery | Selected landsat-c2-l2 item 'LE07_L2SP_148047_20051223_02_T1' for Mumbai 2005 (cloud cover 0.00%)
+2026-06-13 23:27:07,412 | INFO     | core.imagery | Cached imagery to D:\Geo\Land Cover\data\imagery\Mumbai_2005_landsat-c2-l2_1aef3c5a288bdbe8.npz
+2026-06-13 23:27:07,412 | INFO     | core.features | Computing spectral indices and feature stack.
+2026-06-13 23:27:07,422 | INFO     | core.features | Feature stack assembled: 11 features, shape (373, 355).
+2026-06-13 23:27:07,425 | INFO     | core.synthetic_labels | Pseudo-label distribution: {0: 6172, 2: 24, 4: 126219}
+2026-06-13 23:27:07,437 | INFO     | core.synthetic_labels | Sampled 3024 training pixels across 3 classes (features=11).
+2026-06-13 23:27:07,438 | INFO     | models.classifier | Training random_forest on 3024 samples (11 features), test_size=0.20
+2026-06-13 23:27:08,466 | INFO     | models.classifier | Training complete: accuracy=1.0000, macro-F1=1.0000
+2026-06-13 23:27:08,978 | INFO     | models.classifier | Saved model to D:\Geo\Land Cover\models\trained\Mumbai_2005_random_forest.joblib
+2026-06-13 23:27:09,111 | INFO     | core.pipeline | Cached classification result to D:\Geo\Land Cover\data\classifications\Mumbai_2005_random_forest_34df55f45e943155.npz
+2026-06-13 23:27:09,116 | INFO     | core.pipeline | Running fresh analysis for Mumbai 2010 using random_forest
+2026-06-13 23:27:09,117 | INFO     | core.imagery | Searching landsat-c2-l2 for Mumbai in 2010-01-01/2010-12-31 (cloud cover < 20%)
+2026-06-13 23:27:09,483 | INFO     | core.imagery | Found 14 candidate(s); best cloud cover = 0.00%
+2026-06-13 23:27:09,483 | INFO     | core.imagery | Selected landsat-c2-l2 item 'LE07_L2SP_148047_20100308_02_T1' for Mumbai 2010 (cloud cover 0.00%)
+2026-06-13 23:27:29,210 | INFO     | core.imagery | Cached imagery to D:\Geo\Land Cover\data\imagery\Mumbai_2010_landsat-c2-l2_e1d925901f0e02c0.npz
+2026-06-13 23:27:29,212 | INFO     | core.features | Computing spectral indices and feature stack.
+2026-06-13 23:27:29,235 | INFO     | core.features | Feature stack assembled: 11 features, shape (373, 355).
+2026-06-13 23:27:29,238 | INFO     | core.synthetic_labels | Pseudo-label distribution: {0: 5336, 2: 41, 4: 127038}
+2026-06-13 23:27:29,256 | INFO     | core.synthetic_labels | Sampled 3041 training pixels across 3 classes (features=11).
+2026-06-13 23:27:29,257 | INFO     | models.classifier | Training random_forest on 3041 samples (11 features), test_size=0.20
+2026-06-13 23:27:29,761 | INFO     | models.classifier | Training complete: accuracy=1.0000, macro-F1=1.0000
+2026-06-13 23:27:30,201 | INFO     | models.classifier | Saved model to D:\Geo\Land Cover\models\trained\Mumbai_2010_random_forest.joblib
+2026-06-13 23:27:30,291 | INFO     | core.pipeline | Cached classification result to D:\Geo\Land Cover\data\classifications\Mumbai_2010_random_forest_7094bc28b000db91.npz
+2026-06-13 23:27:30,295 | INFO     | core.pipeline | Running fresh analysis for Mumbai 2015 using random_forest
+2026-06-13 23:27:30,296 | INFO     | core.imagery | Searching landsat-c2-l2 for Mumbai in 2015-01-01/2015-12-31 (cloud cover < 20%)
+2026-06-13 23:27:32,762 | INFO     | core.imagery | Found 24 candidate(s); best cloud cover = 0.00%
+2026-06-13 23:27:32,763 | INFO     | core.imagery | Selected landsat-c2-l2 item 'LE07_L2SP_148047_20151219_02_T1' for Mumbai 2015 (cloud cover 0.00%)
+2026-06-13 23:28:03,695 | INFO     | core.imagery | Cached imagery to D:\Geo\Land Cover\data\imagery\Mumbai_2015_landsat-c2-l2_0f03c612e3d66832.npz
+2026-06-13 23:28:03,696 | INFO     | core.features | Computing spectral indices and feature stack.
+2026-06-13 23:28:03,713 | INFO     | core.features | Feature stack assembled: 11 features, shape (373, 355).
+2026-06-13 23:28:03,715 | INFO     | core.synthetic_labels | Pseudo-label distribution: {0: 6246, 2: 11, 4: 126158}
+2026-06-13 23:28:03,731 | INFO     | core.synthetic_labels | Sampled 3011 training pixels across 3 classes (features=11).
+2026-06-13 23:28:03,733 | INFO     | models.classifier | Training random_forest on 3011 samples (11 features), test_size=0.20
+2026-06-13 23:28:04,303 | INFO     | models.classifier | Training complete: accuracy=1.0000, macro-F1=1.0000
+2026-06-13 23:28:04,756 | INFO     | models.classifier | Saved model to D:\Geo\Land Cover\models\trained\Mumbai_2015_random_forest.joblib
+2026-06-13 23:28:04,883 | INFO     | core.pipeline | Cached classification result to D:\Geo\Land Cover\data\classifications\Mumbai_2015_random_forest_9231cc54d529fbd9.npz
+2026-06-13 23:28:04,887 | INFO     | core.pipeline | Running fresh analysis for Mumbai 2020 using random_forest
+2026-06-13 23:28:04,888 | INFO     | core.imagery | Searching sentinel-2-l2a for Mumbai in 2020-01-01/2020-12-31 (cloud cover < 20%)
+2026-06-13 23:28:05,472 | INFO     | core.imagery | Found 68 candidate(s); best cloud cover = 0.01%
+2026-06-13 23:28:05,474 | INFO     | core.imagery | Selected sentinel-2-l2a item 'S2A_MSIL2A_20200207T054011_R005_T42QZG_20201001T043832' for Mumbai 2020 (cloud cover 0.01%)
+2026-06-13 23:29:19,455 | INFO     | core.imagery | Cached imagery to D:\Geo\Land Cover\data\imagery\Mumbai_2020_sentinel-2-l2a_399d4a7f296f850a.npz
+2026-06-13 23:29:19,456 | INFO     | core.features | Computing spectral indices and feature stack.
+2026-06-13 23:29:19,480 | INFO     | core.features | Feature stack assembled: 11 features, shape (377, 359).
+2026-06-13 23:29:19,487 | INFO     | core.synthetic_labels | Pseudo-label distribution: {0: 11053, 1: 13497, 2: 44644, 3: 21467, 4: 44682}
+2026-06-13 23:29:19,503 | INFO     | core.synthetic_labels | Sampled 7500 training pixels across 5 classes (features=11).
+2026-06-13 23:29:19,504 | INFO     | models.classifier | Training random_forest on 7500 samples (11 features), test_size=0.20
+2026-06-13 23:29:20,195 | INFO     | models.classifier | Training complete: accuracy=0.9980, macro-F1=0.9980
+2026-06-13 23:29:20,914 | INFO     | models.classifier | Saved model to D:\Geo\Land Cover\models\trained\Mumbai_2020_random_forest.joblib
+2026-06-13 23:29:21,262 | INFO     | core.pipeline | Cached classification result to D:\Geo\Land Cover\data\classifications\Mumbai_2020_random_forest_6a98901b2632ae74.npz
+2026-06-13 23:29:21,270 | INFO     | core.pipeline | Running fresh analysis for Mumbai 2025 using random_forest
+2026-06-13 23:29:21,271 | INFO     | core.imagery | Loading cached imagery for Mumbai 2025 from D:\Geo\Land Cover\data\imagery\Mumbai_2025_sentinel-2-l2a_298ca77f6f2142ed.npz
+2026-06-13 23:29:21,519 | INFO     | core.features | Computing spectral indices and feature stack.
+2026-06-13 23:29:21,540 | INFO     | core.features | Feature stack assembled: 11 features, shape (377, 359).
+2026-06-13 23:29:21,549 | INFO     | core.synthetic_labels | Pseudo-label distribution: {0: 9063, 1: 12804, 2: 40820, 3: 24203, 4: 48453}
+2026-06-13 23:29:21,562 | INFO     | core.synthetic_labels | Sampled 7500 training pixels across 5 classes (features=11).
+2026-06-13 23:29:21,564 | INFO     | models.classifier | Training random_forest on 7500 samples (11 features), test_size=0.20
+2026-06-13 23:29:22,101 | INFO     | models.classifier | Training complete: accuracy=0.9993, macro-F1=0.9993
+2026-06-13 23:29:22,821 | INFO     | models.classifier | Saved model to D:\Geo\Land Cover\models\trained\Mumbai_2025_random_forest.joblib
+2026-06-13 23:29:23,001 | INFO     | core.pipeline | Cached classification result to D:\Geo\Land Cover\data\classifications\Mumbai_2025_random_forest_f9613ec2947fc58b.npz
+2026-06-13 23:29:23,428 | INFO     | core.change_detection | Running change detection on maps of shape (373, 355)
+2026-06-13 23:29:23,457 | INFO     | core.change_detection | Change detection complete. 2.60% of AOI changed class.
+2026-06-13 23:29:23,465 | INFO     | core.change_detection | Running change detection on maps of shape (373, 355)
+2026-06-13 23:29:23,475 | INFO     | core.change_detection | Change detection complete. 2.46% of AOI changed class.
+2026-06-13 23:29:23,483 | ERROR    | __main__ | Unhandled error while rendering page 'Trend Analysis'
+Traceback (most recent call last):
+  File "D:\Geo\Land Cover\app.py", line 59, in main
+    PAGES[selection].render()
+  File "D:\Geo\Land Cover\pages\trend_analysis.py", line 183, in render
+    change = detector.detect_change(
+  File "D:\Geo\Land Cover\core\change_detection.py", line 61, in detect_change
+    raise ValueError(
+ValueError: Classification maps must have the same shape, got (373, 355) and (377, 359).
+2026-06-13 23:31:05,734 | ERROR    | __main__ | Unhandled error while rendering page 'Multi-Year Comparison'
+Traceback (most recent call last):
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Prajakta\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connectionpool.py", line 1106, in _validate_conn
+    conn.connect()
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='planetarycomputer.microsoft.com', port=443): Failed to resolve 'planetarycomputer.microsoft.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Geo\Land Cover\venv\lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connectionpool.py", line 872, in urlopen
+    return self.urlopen(
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connectionpool.py", line 872, in urlopen
+    return self.urlopen(
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connectionpool.py", line 872, in urlopen
+    return self.urlopen(
+  [Previous line repeated 2 more times]
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\util\retry.py", line 543, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='planetarycomputer.microsoft.com', port=443): Max retries exceeded with url: /api/stac/v1 (Caused by NameResolutionError("HTTPSConnection(host='planetarycomputer.microsoft.com', port=443): Failed to resolve 'planetarycomputer.microsoft.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Geo\Land Cover\venv\lib\site-packages\pystac_client\stac_api_io.py", line 214, in request
+    resp = self.session.send(prepped, timeout=self.timeout, **send_kwargs)
+  File "D:\Geo\Land Cover\venv\lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Geo\Land Cover\venv\lib\site-packages\requests\adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='planetarycomputer.microsoft.com', port=443): Max retries exceeded with url: /api/stac/v1 (Caused by NameResolutionError("HTTPSConnection(host='planetarycomputer.microsoft.com', port=443): Failed to resolve 'planetarycomputer.microsoft.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Geo\Land Cover\app.py", line 59, in main
+    PAGES[selection].render()
+  File "D:\Geo\Land Cover\pages\multi_year.py", line 81, in render
+    pipeline = LandCoverPipeline(model_type=model_type)
+  File "D:\Geo\Land Cover\core\pipeline.py", line 58, in __init__
+    self.imagery = ImageryAcquisition()
+  File "D:\Geo\Land Cover\core\imagery.py", line 95, in __init__
+    self._catalog = pystac_client.Client.open(
+  File "D:\Geo\Land Cover\venv\lib\site-packages\pystac_client\client.py", line 170, in open
+    client: Client = cls.from_file(
+  File "D:\Geo\Land Cover\venv\lib\site-packages\pystac_client\client.py", line 226, in from_file
+    client: Client = super().from_file(href, stac_io)
+  File "D:\Geo\Land Cover\venv\lib\site-packages\pystac\catalog.py", line 1288, in from_file
+    result = super().from_file(href, stac_io)
+  File "D:\Geo\Land Cover\venv\lib\site-packages\pystac\stac_object.py", line 648, in from_file
+    d = stac_io.read_json(href)
+  File "D:\Geo\Land Cover\venv\lib\site-packages\pystac\stac_io.py", line 200, in read_json
+    txt = self.read_text(source, *args, **kwargs)
+  File "D:\Geo\Land Cover\venv\lib\site-packages\pystac_client\stac_api_io.py", line 167, in read_text
+    return self.request(href, *args, **kwargs)
+  File "D:\Geo\Land Cover\venv\lib\site-packages\pystac_client\stac_api_io.py", line 217, in request
+    raise APIError(str(err))
+pystac_client.exceptions.APIError: HTTPSConnectionPool(host='planetarycomputer.microsoft.com', port=443): Max retries exceeded with url: /api/stac/v1 (Caused by NameResolutionError("HTTPSConnection(host='planetarycomputer.microsoft.com', port=443): Failed to resolve 'planetarycomputer.microsoft.com' ([Errno 11001] getaddrinfo failed)"))
+2026-06-13 23:31:35,119 | ERROR    | __main__ | Unhandled error while rendering page 'Multi-Year Comparison'
+Traceback (most recent call last):
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Prajakta\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connectionpool.py", line 1106, in _validate_conn
+    conn.connect()
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='planetarycomputer.microsoft.com', port=443): Failed to resolve 'planetarycomputer.microsoft.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Geo\Land Cover\venv\lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connectionpool.py", line 872, in urlopen
+    return self.urlopen(
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connectionpool.py", line 872, in urlopen
+    return self.urlopen(
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connectionpool.py", line 872, in urlopen
+    return self.urlopen(
+  [Previous line repeated 2 more times]
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+  File "D:\Geo\Land Cover\venv\lib\site-packages\urllib3\util\retry.py", line 543, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='planetarycomputer.microsoft.com', port=443): Max retries exceeded with url: /api/stac/v1 (Caused by NameResolutionError("HTTPSConnection(host='planetarycomputer.microsoft.com', port=443): Failed to resolve 'planetarycomputer.microsoft.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Geo\Land Cover\venv\lib\site-packages\pystac_client\stac_api_io.py", line 214, in request
+    resp = self.session.send(prepped, timeout=self.timeout, **send_kwargs)
+  File "D:\Geo\Land Cover\venv\lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Geo\Land Cover\venv\lib\site-packages\requests\adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='planetarycomputer.microsoft.com', port=443): Max retries exceeded with url: /api/stac/v1 (Caused by NameResolutionError("HTTPSConnection(host='planetarycomputer.microsoft.com', port=443): Failed to resolve 'planetarycomputer.microsoft.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Geo\Land Cover\app.py", line 59, in main
+    PAGES[selection].render()
+  File "D:\Geo\Land Cover\pages\multi_year.py", line 81, in render
+    pipeline = LandCoverPipeline(model_type=model_type)
+  File "D:\Geo\Land Cover\core\pipeline.py", line 58, in __init__
+    self.imagery = ImageryAcquisition()
+  File "D:\Geo\Land Cover\core\imagery.py", line 95, in __init__
+    self._catalog = pystac_client.Client.open(
+  File "D:\Geo\Land Cover\venv\lib\site-packages\pystac_client\client.py", line 170, in open
+    client: Client = cls.from_file(
+  File "D:\Geo\Land Cover\venv\lib\site-packages\pystac_client\client.py", line 226, in from_file
+    client: Client = super().from_file(href, stac_io)
+  File "D:\Geo\Land Cover\venv\lib\site-packages\pystac\catalog.py", line 1288, in from_file
+    result = super().from_file(href, stac_io)
+  File "D:\Geo\Land Cover\venv\lib\site-packages\pystac\stac_object.py", line 648, in from_file
+    d = stac_io.read_json(href)
+  File "D:\Geo\Land Cover\venv\lib\site-packages\pystac\stac_io.py", line 200, in read_json
+    txt = self.read_text(source, *args, **kwargs)
+  File "D:\Geo\Land Cover\venv\lib\site-packages\pystac_client\stac_api_io.py", line 167, in read_text
+    return self.request(href, *args, **kwargs)
+  File "D:\Geo\Land Cover\venv\lib\site-packages\pystac_client\stac_api_io.py", line 217, in request
+    raise APIError(str(err))
+pystac_client.exceptions.APIError: HTTPSConnectionPool(host='planetarycomputer.microsoft.com', port=443): Max retries exceeded with url: /api/stac/v1 (Caused by NameResolutionError("HTTPSConnection(host='planetarycomputer.microsoft.com', port=443): Failed to resolve 'planetarycomputer.microsoft.com' ([Errno 11001] getaddrinfo failed)"))
+2026-06-13 23:40:12,636 | INFO     | core.aoi | Geocoding 'Mira Road, India' (attempt 1/3)
+2026-06-13 23:40:13,373 | INFO     | core.aoi | Geocoding 'Mira Road, India' (attempt 1/3)
+2026-06-13 23:40:13,607 | INFO     | core.aoi | Resolved AOI for 'Mira Road, India': lat=19.2817, lon=72.8561, bbox=(72.8060676, 19.2316975, 72.9060676, 19.3316975)
+2026-06-13 23:40:13,607 | INFO     | core.aoi | Resolved AOI for 'Mira Road, India': lat=19.2817, lon=72.8561, bbox=(72.8060676, 19.2316975, 72.9060676, 19.3316975)
+2026-06-13 23:40:13,707 | INFO     | core.pipeline | Running fresh analysis for Mira Road 2020 using random_forest
+2026-06-13 23:40:13,715 | INFO     | core.imagery | Searching sentinel-2-l2a for Mira Road in 2020-01-01/2020-12-31 (cloud cover < 20%)
+2026-06-13 23:40:14,998 | INFO     | core.imagery | Found 68 candidate(s); best cloud cover = 0.01%
+2026-06-13 23:40:14,998 | INFO     | core.imagery | Selected sentinel-2-l2a item 'S2A_MSIL2A_20200207T054011_R005_T42QZG_20201001T043832' for Mira Road 2020 (cloud cover 0.01%)
+2026-06-13 23:41:24,752 | INFO     | core.imagery | Cached imagery to D:\Geo\Land Cover\data\imagery\Mira_Road_2020_sentinel-2-l2a_23387c1c4cd1bec8.npz
+2026-06-13 23:41:24,753 | INFO     | core.features | Computing spectral indices and feature stack.
+2026-06-13 23:41:24,949 | INFO     | core.features | Feature stack assembled: 11 features, shape (377, 359).
+2026-06-13 23:41:24,954 | INFO     | core.synthetic_labels | Pseudo-label distribution: {0: 21429, 1: 51111, 2: 29713, 3: 15736, 4: 17354}
+2026-06-13 23:41:25,007 | INFO     | core.synthetic_labels | Sampled 7500 training pixels across 5 classes (features=11).
+2026-06-13 23:41:25,008 | INFO     | models.classifier | Training random_forest on 7500 samples (11 features), test_size=0.20
+2026-06-13 23:41:25,911 | INFO     | models.classifier | Training complete: accuracy=0.9960, macro-F1=0.9960
+2026-06-13 23:41:26,752 | INFO     | models.classifier | Saved model to D:\Geo\Land Cover\models\trained\Mira_Road_2020_random_forest.joblib
+2026-06-13 23:41:27,166 | INFO     | core.pipeline | Cached classification result to D:\Geo\Land Cover\data\classifications\Mira_Road_2020_random_forest_ed2dccb31e1f2fc1.npz
+2026-06-13 23:41:27,187 | INFO     | core.pipeline | Running fresh analysis for Mira Road 2025 using random_forest
+2026-06-13 23:41:27,188 | INFO     | core.imagery | Searching sentinel-2-l2a for Mira Road in 2025-01-01/2025-12-31 (cloud cover < 20%)
+2026-06-13 23:41:27,926 | INFO     | core.imagery | Found 82 candidate(s); best cloud cover = 0.00%
+2026-06-13 23:41:27,927 | INFO     | core.imagery | Selected sentinel-2-l2a item 'S2B_MSIL2A_20251013T053659_R005_T42QZG_20251013T090851' for Mira Road 2025 (cloud cover 0.00%)
+2026-06-13 23:43:36,382 | INFO     | core.imagery | Cached imagery to D:\Geo\Land Cover\data\imagery\Mira_Road_2025_sentinel-2-l2a_f2f53c6ec6632624.npz
+2026-06-13 23:43:36,383 | INFO     | core.features | Computing spectral indices and feature stack.
+2026-06-13 23:43:36,398 | INFO     | core.features | Feature stack assembled: 11 features, shape (377, 359).
+2026-06-13 23:43:36,403 | INFO     | core.synthetic_labels | Pseudo-label distribution: {0: 20403, 1: 48569, 2: 22822, 3: 23433, 4: 20116}
+2026-06-13 23:43:36,427 | INFO     | core.synthetic_labels | Sampled 7500 training pixels across 5 classes (features=11).
+2026-06-13 23:43:36,427 | INFO     | models.classifier | Training random_forest on 7500 samples (11 features), test_size=0.20
+2026-06-13 23:43:36,981 | INFO     | models.classifier | Training complete: accuracy=0.9987, macro-F1=0.9987
+2026-06-13 23:43:37,789 | INFO     | models.classifier | Saved model to D:\Geo\Land Cover\models\trained\Mira_Road_2025_random_forest.joblib
+2026-06-13 23:43:38,065 | INFO     | core.pipeline | Cached classification result to D:\Geo\Land Cover\data\classifications\Mira_Road_2025_random_forest_d97d7bb17777b5b2.npz
+2026-06-13 23:43:38,067 | INFO     | core.change_detection | Running change detection on maps of shape (377, 359)
+2026-06-13 23:43:38,312 | INFO     | core.change_detection | Change detection complete. 27.81% of AOI changed class.
+2026-06-13 23:57:41,421 | INFO     | core.aoi | Geocoding 'Renukut, India' (attempt 1/3)
+2026-06-13 23:57:43,188 | INFO     | core.aoi | Resolved AOI for 'Renukut, India': lat=24.2032, lon=83.0400, bbox=(82.9900348, 24.1532305, 83.0900348, 24.2532305)
+2026-06-13 23:57:43,194 | INFO     | core.pipeline | Running fresh analysis for Renukut 2024 using random_forest
+2026-06-13 23:57:43,195 | INFO     | core.imagery | Searching sentinel-2-l2a for Renukut in 2024-01-01/2024-12-31 (cloud cover < 20%)
+2026-06-13 23:57:44,916 | INFO     | core.imagery | Found 67 candidate(s); best cloud cover = 0.00%
+2026-06-13 23:57:44,916 | INFO     | core.imagery | Selected sentinel-2-l2a item 'S2B_MSIL2A_20240310T045649_R119_T44QQM_20240310T094149' for Renukut 2024 (cloud cover 0.00%)
+2026-06-13 23:58:14,056 | INFO     | core.aoi | AOI cache hit for 'Renukut, India'
+2026-06-13 23:58:14,626 | INFO     | core.aoi | AOI cache hit for 'Renukut, India'
+2026-06-13 23:58:14,630 | INFO     | core.pipeline | Running fresh analysis for Renukut 2024 using random_forest
+2026-06-13 23:58:14,630 | INFO     | core.imagery | Searching sentinel-2-l2a for Renukut in 2024-01-01/2024-12-31 (cloud cover < 20%)
+2026-06-13 23:58:15,372 | INFO     | core.imagery | Found 67 candidate(s); best cloud cover = 0.00%
+2026-06-13 23:58:15,373 | INFO     | core.imagery | Selected sentinel-2-l2a item 'S2B_MSIL2A_20240310T045649_R119_T44QQM_20240310T094149' for Renukut 2024 (cloud cover 0.00%)
+2026-06-14 00:00:35,301 | INFO     | core.imagery | Cached imagery to D:\Geo\Land Cover\data\imagery\Renukut_2024_sentinel-2-l2a_3da70a6b2a9201eb.npz
+2026-06-14 00:00:35,302 | INFO     | core.features | Computing spectral indices and feature stack.
+2026-06-14 00:00:35,309 | INFO     | core.features | Feature stack assembled: 11 features, shape (374, 344).
+2026-06-14 00:00:35,313 | INFO     | core.synthetic_labels | Pseudo-label distribution: {0: 13285, 1: 1455, 2: 87209, 3: 25215, 4: 1492}
+2026-06-14 00:00:35,334 | INFO     | core.synthetic_labels | Sampled 7447 training pixels across 5 classes (features=11).
+2026-06-14 00:00:35,335 | INFO     | models.classifier | Training random_forest on 7447 samples (11 features), test_size=0.20
+2026-06-14 00:00:35,987 | INFO     | models.classifier | Training complete: accuracy=0.9993, macro-F1=0.9993
+2026-06-14 00:00:36,522 | INFO     | models.classifier | Saved model to D:\Geo\Land Cover\models\trained\Renukut_2024_random_forest.joblib
+2026-06-14 00:00:36,775 | INFO     | core.pipeline | Cached classification result to D:\Geo\Land Cover\data\classifications\Renukut_2024_random_forest_9557fdf926a502a2.npz
+2026-06-14 00:00:37,693 | INFO     | core.imagery | Cached imagery to D:\Geo\Land Cover\data\imagery\Renukut_2024_sentinel-2-l2a_3da70a6b2a9201eb.npz
+2026-06-14 00:00:37,694 | INFO     | core.features | Computing spectral indices and feature stack.
+2026-06-14 00:00:37,702 | INFO     | core.features | Feature stack assembled: 11 features, shape (374, 344).
+2026-06-14 00:00:37,704 | INFO     | core.synthetic_labels | Pseudo-label distribution: {0: 13285, 1: 1455, 2: 87209, 3: 25215, 4: 1492}
+2026-06-14 00:00:37,715 | INFO     | core.synthetic_labels | Sampled 7447 training pixels across 5 classes (features=11).
+2026-06-14 00:00:37,716 | INFO     | models.classifier | Training random_forest on 7447 samples (11 features), test_size=0.20
+2026-06-14 00:00:38,095 | INFO     | models.classifier | Training complete: accuracy=0.9993, macro-F1=0.9993
+2026-06-14 00:00:38,641 | INFO     | models.classifier | Saved model to D:\Geo\Land Cover\models\trained\Renukut_2024_random_forest.joblib
+2026-06-14 00:00:38,874 | INFO     | core.pipeline | Cached classification result to D:\Geo\Land Cover\data\classifications\Renukut_2024_random_forest_9557fdf926a502a2.npz
+2026-06-14 00:05:11,597 | INFO     | core.aoi | Geocoding 'Shahganj, India' (attempt 1/3)
+2026-06-14 00:05:12,586 | INFO     | core.aoi | Resolved AOI for 'Shahganj, India': lat=26.0186, lon=82.6172, bbox=(82.5672019, 25.9686438, 82.6672019, 26.0686438)
+2026-06-14 00:05:12,591 | INFO     | core.pipeline | Running fresh analysis for Shahganj 2025 using random_forest
+2026-06-14 00:05:12,592 | INFO     | core.imagery | Searching sentinel-2-l2a for Shahganj in 2025-01-01/2025-12-31 (cloud cover < 20%)
+2026-06-14 00:05:14,499 | INFO     | core.imagery | Found 76 candidate(s); best cloud cover = 0.00%
+2026-06-14 00:05:14,499 | INFO     | core.imagery | Selected sentinel-2-l2a item 'S2A_MSIL2A_20250315T051241_R019_T44RPP_20250315T113317' for Shahganj 2025 (cloud cover 0.00%)
+2026-06-14 00:05:23,379 | INFO     | core.imagery | Cached imagery to D:\Geo\Land Cover\data\imagery\Shahganj_2025_sentinel-2-l2a_71b21128ce149c25.npz
+2026-06-14 00:05:23,380 | INFO     | core.features | Computing spectral indices and feature stack.
+2026-06-14 00:05:23,397 | INFO     | core.features | Feature stack assembled: 11 features, shape (373, 338).
+2026-06-14 00:05:23,402 | INFO     | core.synthetic_labels | Pseudo-label distribution: {0: 769, 1: 34605, 2: 20967, 3: 67198, 4: 2535}
+2026-06-14 00:05:23,410 | INFO     | core.synthetic_labels | Sampled 6769 training pixels across 5 classes (features=11).
+2026-06-14 00:05:23,411 | INFO     | models.classifier | Training random_forest on 6769 samples (11 features), test_size=0.20
+2026-06-14 00:05:23,962 | INFO     | models.classifier | Training complete: accuracy=0.9985, macro-F1=0.9987
+2026-06-14 00:05:24,515 | INFO     | models.classifier | Saved model to D:\Geo\Land Cover\models\trained\Shahganj_2025_random_forest.joblib
+2026-06-14 00:05:24,836 | INFO     | core.pipeline | Cached classification result to D:\Geo\Land Cover\data\classifications\Shahganj_2025_random_forest_36a7f72c99022bd4.npz
+2026-06-14 00:10:20,720 | INFO     | core.aoi | Geocoding 'Delhi' (attempt 1/3)
+2026-06-14 00:10:21,179 | INFO     | core.aoi | Resolved AOI for 'Delhi': lat=28.6139, lon=77.2090, bbox=(77.15900570000001, 28.5638954, 77.2590057, 28.6638954)
+2026-06-14 00:10:21,185 | INFO     | core.pipeline | Running fresh analysis for Delhi 2025 using random_forest
+2026-06-14 00:10:21,187 | INFO     | core.imagery | Searching sentinel-2-l2a for Delhi in 2025-01-01/2025-12-31 (cloud cover < 20%)
+2026-06-14 00:10:23,956 | INFO     | core.imagery | Found 45 candidate(s); best cloud cover = 0.00%
+2026-06-14 00:10:23,957 | INFO     | core.imagery | Selected sentinel-2-l2a item 'S2B_MSIL2A_20250324T052649_R105_T43RGM_20250324T074123' for Delhi 2025 (cloud cover 0.00%)
+2026-06-14 00:14:06,534 | INFO     | core.imagery | Cached imagery to D:\Geo\Land Cover\data\imagery\Delhi_2025_sentinel-2-l2a_a6c6081e1b3b686c.npz
+2026-06-14 00:14:06,534 | INFO     | core.features | Computing spectral indices and feature stack.
+2026-06-14 00:14:06,562 | INFO     | core.features | Feature stack assembled: 11 features, shape (375, 332).
+2026-06-14 00:14:06,575 | INFO     | core.synthetic_labels | Pseudo-label distribution: {0: 1209, 1: 23744, 2: 43965, 3: 42641, 4: 12941}
+2026-06-14 00:14:06,595 | INFO     | core.synthetic_labels | Sampled 7209 training pixels across 5 classes (features=11).
+2026-06-14 00:14:06,596 | INFO     | models.classifier | Training random_forest on 7209 samples (11 features), test_size=0.20
+2026-06-14 00:14:07,722 | INFO     | models.classifier | Training complete: accuracy=0.9993, macro-F1=0.9993
+2026-06-14 00:14:08,683 | INFO     | models.classifier | Saved model to D:\Geo\Land Cover\models\trained\Delhi_2025_random_forest.joblib
+2026-06-14 00:14:09,371 | INFO     | core.pipeline | Cached classification result to D:\Geo\Land Cover\data\classifications\Delhi_2025_random_forest_025a42e899931cfe.npz
+2026-06-14 00:23:46,726 | INFO     | core.aoi | Geocoding 'Shahganj' (attempt 1/3)
+2026-06-14 00:23:47,294 | INFO     | core.aoi | Resolved AOI for 'Shahganj': lat=26.0186, lon=82.6172, bbox=(82.5672019, 25.9686438, 82.6672019, 26.0686438)
+2026-06-14 00:23:47,308 | INFO     | core.pipeline | Running fresh analysis for Shahganj 2011 using random_forest
+2026-06-14 00:23:47,310 | INFO     | core.imagery | Searching landsat-c2-l2 for Shahganj in 2011-01-01/2011-12-31 (cloud cover < 20%)
+2026-06-14 00:23:48,772 | INFO     | core.imagery | Found 35 candidate(s); best cloud cover = 0.00%
+2026-06-14 00:23:48,772 | INFO     | core.imagery | Selected landsat-c2-l2 item 'LE07_L2SP_142042_20111230_02_T1' for Shahganj 2011 (cloud cover 0.00%)
+2026-06-14 00:27:30,698 | INFO     | core.imagery | Cached imagery to D:\Geo\Land Cover\data\imagery\Shahganj_2011_landsat-c2-l2_59eb4476b6865075.npz
+2026-06-14 00:27:30,700 | INFO     | core.features | Computing spectral indices and feature stack.
+2026-06-14 00:27:30,828 | INFO     | core.features | Feature stack assembled: 11 features, shape (373, 338).
+2026-06-14 00:27:30,834 | INFO     | core.synthetic_labels | Pseudo-label distribution: {0: 69, 4: 126005}
+2026-06-14 00:27:30,856 | INFO     | core.synthetic_labels | Sampled 1569 training pixels across 2 classes (features=11).
+2026-06-14 00:27:30,858 | INFO     | models.classifier | Training random_forest on 1569 samples (11 features), test_size=0.20
+2026-06-14 00:27:32,009 | INFO     | models.classifier | Training complete: accuracy=1.0000, macro-F1=1.0000
+2026-06-14 00:27:32,669 | INFO     | models.classifier | Saved model to D:\Geo\Land Cover\models\trained\Shahganj_2011_random_forest.joblib
+2026-06-14 00:27:32,865 | INFO     | core.pipeline | Cached classification result to D:\Geo\Land Cover\data\classifications\Shahganj_2011_random_forest_97dcb6bbecb97a65.npz

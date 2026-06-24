@@ -1,0 +1,80 @@
+{
+  "mumbai, india|0.05": {
+    "name": "Mumbai",
+    "country": "India",
+    "latitude": 19.054999,
+    "longitude": 72.8692035,
+    "bbox": [
+      72.8192035,
+      19.004998999999998,
+      72.9192035,
+      19.104999
+    ],
+    "display_name": "Mumbai, Mumbai Suburban District, Maharashtra, 400051, India"
+  },
+  "mira road, india|0.05": {
+    "name": "Mira Road",
+    "country": "India",
+    "latitude": 19.2816975,
+    "longitude": 72.8560676,
+    "bbox": [
+      72.8060676,
+      19.2316975,
+      72.9060676,
+      19.3316975
+    ],
+    "display_name": "Mira Road, Mira Road Station FOB, Shanti Nagar, Mira, Mira-Bhayander, Thane Subdistrict, Thane, Maharashtra, 401107, India"
+  },
+  "renukut, india|0.05": {
+    "name": "Renukut",
+    "country": "India",
+    "latitude": 24.2032305,
+    "longitude": 83.0400348,
+    "bbox": [
+      82.9900348,
+      24.1532305,
+      83.0900348,
+      24.2532305
+    ],
+    "display_name": "Renukoot, NH39, Renukoot, Dudhi, Sonbhadra, Uttar Pradesh, 231217, India"
+  },
+  "shahganj, india|0.05": {
+    "name": "Shahganj",
+    "country": "India",
+    "latitude": 26.0186438,
+    "longitude": 82.6172019,
+    "bbox": [
+      82.5672019,
+      25.9686438,
+      82.6672019,
+      26.0686438
+    ],
+    "display_name": "Shahganj, Jaunpur, Uttar Pradesh, India"
+  },
+  "delhi|0.05": {
+    "name": "Delhi",
+    "country": null,
+    "latitude": 28.6138954,
+    "longitude": 77.2090057,
+    "bbox": [
+      77.15900570000001,
+      28.5638954,
+      77.2590057,
+      28.6638954
+    ],
+    "display_name": "New Delhi, Delhi, India"
+  },
+  "shahganj|0.05": {
+    "name": "Shahganj",
+    "country": null,
+    "latitude": 26.0186438,
+    "longitude": 82.6172019,
+    "bbox": [
+      82.5672019,
+      25.9686438,
+      82.6672019,
+      26.0686438
+    ],
+    "display_name": "Shahganj, Jaunpur, Uttar Pradesh, India"
+  }
+}
