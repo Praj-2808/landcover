@@ -54,15 +54,16 @@ class ChangeDetector:
             map_to: 2D int array of class codes for the later year.
 
         Returns:
-            A ChangeResult with transition matrices, area statistics, and
+            A ChangeResult with transition git statusmatrices, area statistics, and
             a binary change map.
         """
-        if map_from.shape != map_to.shape:
-            raise ValueError(
-                f"Classification maps must have the same shape, got "
-                f"{map_from.shape} and {map_to.shape}."
-            )
-
+        if map_from.shape != map_to.shape: 
+            logger.warning("Shape mismatch: %s vs %s. Cropping to common size.", map_from.shape, map_to.shape,)
+            h = min(map_from.shape[0], map_to.shape[0])
+            w = min(map_from.shape[1], map_to.shape[1])
+            map_from = map_from[:h, :w]
+            map_to = map_to[:h, :w]
+        
         logger.info("Running change detection on maps of shape %s", map_from.shape)
 
         flat_from = map_from.reshape(-1)
