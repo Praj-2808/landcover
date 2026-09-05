@@ -6,6 +6,7 @@ The Land Cover Classification and Change Detection System is an interactive geos
 
 The system enables users to explore historical and current land-cover conditions for any selected location, compare multiple years, monitor trends, and identify significant changes in vegetation, water bodies, built-up regions, and barren land.
 
+Demo: https://landcover-prajakta.streamlit.app/
 
 ## Objectives
 
